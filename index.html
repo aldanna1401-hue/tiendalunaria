@@ -7,11 +7,11 @@
   <title>Document</title>
 </head>
 <body>
-   <h1>🌙 Tienda Lunaria</h1>
+   <h1 id="inicio">🌙 Tienda Lunaria</h1>
 
-    <p>¡Bienvenidos a nuestra tienda de ropa!</p>
+<h2 id="productos">Nuestros productos</h2>
 
-    <h2>Nuestros productos</h2>
+<h2 id="contacto">Contacto</h2>
 
     <h3>Blusa</h3>
     <p>Precio: $30.000</p>
@@ -70,5 +70,55 @@
     <a href="#productos">Productos</a>
     <a href="#contacto">Contacto</a>
 </nav>
+
+<img
+    src="https://placehold.co/250x250/f3e5f5/8e44ad?text=Blusa"
+    alt="Blusa de mujer"
+    class="imagen-producto">
+
+.imagen-producto {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 4px 10px #00000020;
+}
+
+<div class="contenedor-productos">
+
+    <div class="producto">
+        <h3>Blusa 🌸</h3>
+        <img src="https://placehold.co/250x250/f3e5f5/8e44ad?text=Blusa"
+             alt="Blusa de mujer">
+        <p>Precio: $30.000</p>
+        <button onclick="comprar('Blusa', 30000)">
+            Comprar
+        </button>
+    </div>
+
+    <div class="producto">
+        <h3>Pantalón 👖</h3>
+        <img src="https://placehold.co/250x250/fce4ec/8e44ad?text=Pantalon"
+             alt="Pantalón de mujer">
+        <p>Precio: $50.000</p>
+        <button onclick="comprar('Pantalón', 50000)">
+            Comprar
+        </button>
+    </div>
+
+    <div class="producto">
+        <h3>Vestido 👗</h3>
+        <img src="https://placehold.co/250x250/eadcf8/8e44ad?text=Vestido"
+             alt="Vestido de mujer">
+        <p>Precio: $60.000</p>
+        <button onclick="comprar('Vestido', 60000)">
+            Comprar
+        </button>
+    </div>
+
+</div>
+
 
 </html>
